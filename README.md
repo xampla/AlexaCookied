@@ -36,5 +36,4 @@ cp -p cookies.sqlite3 ~/Documents
 * **Xavier Marrugat**
 
 ## License
-
-![License: GPL v3](https://www.gnu.org/licenses/gpl-3.0)(https://www.gnu.org/licenses/gpl-3.0)
+[![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
