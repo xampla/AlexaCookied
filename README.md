@@ -1,6 +1,6 @@
 # Alexa Cookied
 
-My bachelor's project in Universitat Politécnica de Barcelona (UPC).
+This is my bachelor's project at Universitat Politécnica de Barcelona (UPC).
 It is a PoC tool that given the cookies from a user that logged in Alexa webpage outputs personal information of him.
 
 ## Getting Started
