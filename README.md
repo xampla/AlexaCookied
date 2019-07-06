@@ -28,7 +28,7 @@ The cookie file can be obtained from the user's browser profile. Note that it ha
 This can be done with this command in Linux/OS X, which will copy the cookie file into the folder Documents:
 
 ```
-cp -p cookies.sqlite3 ~/Documents
+cp -p cookies.sqlite ~/Documents
 ```
 
 ## Authors
