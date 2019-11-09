@@ -11,13 +11,13 @@ class Query:
             'session-id': None,
             'session-id-time': None,
             'ubid-acbes': None,
-            'session-token': None,
+            #'session-token': None,
             'x-acbes': None,
             'at-acbes': None,
             'sess-at-acbes': None,
             'sst-acbes': None,
             'csrf': None,
-            'x-wl-uid': None,
+            #'x-wl-uid': None,
         }
         for key in self.cookie.keys():
             query = "select value from moz_cookies where baseDomain=? and name=?;"
@@ -33,7 +33,8 @@ class Query:
             'Referer': 'https://alexa.amazon.es/spa/index.html',
             'X-Requested-With': 'XMLHttpRequest',
             'Connection': 'close',
-            'Cookie': 'at-acbes=' + self.cookie['at-acbes']+ '; csrf=' + self.cookie['csrf']+ '; sess-at-acbes=' + self.cookie['sess-at-acbes']+ '; session-id=' + self.cookie['session-id']+ '; session-id-time=' + self.cookie['session-id-time']+ '; session-token=' + self.cookie['session-token']+ '; sst-acbes=' + self.cookie['sst-acbes']+ '; ubid-acbes=' + self.cookie['ubid-acbes']+ '; x-acbes=' + self.cookie['x-acbes']+ '; x-wl-uid=' + self.cookie['x-wl-uid'],
+            #'Cookie': 'at-acbes=' + self.cookie['at-acbes']+ '; csrf=' + self.cookie['csrf']+ '; sess-at-acbes=' + self.cookie['sess-at-acbes']+ '; session-id=' + self.cookie['session-id']+ '; session-id-time=' + self.cookie['session-id-time']+ '; session-token=' + self.cookie['session-token']+ '; sst-acbes=' + self.cookie['sst-acbes']+ '; ubid-acbes=' + self.cookie['ubid-acbes']+ '; x-acbes=' + self.cookie['x-acbes']+ '; x-wl-uid=' + self.cookie['x-wl-uid'],
+            'Cookie': 'at-acbes=' + self.cookie['at-acbes']+ '; csrf=' + self.cookie['csrf']+ '; sess-at-acbes=' + self.cookie['sess-at-acbes']+ '; session-id=' + self.cookie['session-id']+ '; session-id-time=' + self.cookie['session-id-time']+ '; sst-acbes=' + self.cookie['sst-acbes']+ '; ubid-acbes=' + self.cookie['ubid-acbes']+ '; x-acbes=' + self.cookie['x-acbes'],
         }
         conn.close()
 
