@@ -162,6 +162,7 @@ def extractInfoFromHistory():
     result['compras'] = compras
     return result
 
+#Reminder could be "Open [Skill Name]"
 def createReminder():
     print("---------------------------------------------------------------------------")
     print("\033[1m" + "Create a reminder:" + "\033[00m")
@@ -192,7 +193,7 @@ def createReminder():
             print("\033[32m" + "Wakeword set successfully." + "\033[00m")
             print("\033[34m" + "==>"  + "\033[00m" + "\033[1m" + "What do you want to be \"remembered\"? ;)" + "\033[00m")
             reminder = input()
-            reminder = current_ww + ", " + reminder
+            reminder = current_ww + ", " + reminder + ". " + current_ww
             print("\033[34m" + "==>"  + "\033[00m" + "\033[1m" + "At what time do you want to schedule it? - (from 00:00 to 24:00)" + "\033[00m")
             time = input()
             print("\033[34m" + "==>"  + "\033[00m" + "\033[1m" + "What day? - (from 01 to 31)" + "\033[00m")
